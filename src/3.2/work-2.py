@@ -342,7 +342,7 @@ def main():
     # ========================================================================
     # 综合分析
     # ========================================================================
-    analyze_results(results_random, results_tridiag)
+    # analyze_results(results_random, results_tridiag)
     
     logger.info("\n性能测试完成！")
 

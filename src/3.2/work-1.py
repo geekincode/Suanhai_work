@@ -319,26 +319,26 @@ def main():
         max_backend_diff = max(backend_diff) if backend_diff else 0
         print(f"  NumPy 和 PyTorch 的差异: {max_backend_diff:.2e}")
     
-    print("\n2. 结论：")
-    print("-" * 50)
-    print("""
-    - 两个后端的计算结果高度一致，差异主要来自浮点数精度
-    - NumPy 使用 float64，PyTorch 通常也使用 float64
-    - 数值微分的误差主要来自有限差分法的截断误差
-    - 随着步长 h 的减小，截断误差减小，但舍入误差增大
-    - 在 h=1e-6 的设置下，达到了较好的精度平衡
-    """)
+    # print("\n2. 结论：")
+    # print("-" * 50)
+    # print("""
+    # - 两个后端的计算结果高度一致，差异主要来自浮点数精度
+    # - NumPy 使用 float64，PyTorch 通常也使用 float64
+    # - 数值微分的误差主要来自有限差分法的截断误差
+    # - 随着步长 h 的减小，截断误差减小，但舍入误差增大
+    # - 在 h=1e-6 的设置下，达到了较好的精度平衡
+    # """)
     
-    print("\n3. 后端切换的优势：")
-    print("-" * 50)
-    print("""
-    - 同一套代码可在不同后端运行，易于迁移
-    - NumPy 适合 CPU 计算，高效但无法 GPU 加速
-    - PyTorch 适合 GPU 计算，对大规模问题性能更优
-    - FEALPy 的后端管理器使得这种切换对用户透明
-    """)
+    # print("\n3. 后端切换的优势：")
+    # print("-" * 50)
+    # print("""
+    # - 同一套代码可在不同后端运行，易于迁移
+    # - NumPy 适合 CPU 计算，高效但无法 GPU 加速
+    # - PyTorch 适合 GPU 计算，对大规模问题性能更优
+    # - FEALPy 的后端管理器使得这种切换对用户透明
+    # """)
     
-    logger.info("\n实验完成！")
+    # logger.info("\n实验完成！")
 
 
 if __name__ == "__main__":
