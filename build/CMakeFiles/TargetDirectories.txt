@@ -1,0 +1,4 @@
+/home/geekincode/work_3/build/CMakeFiles/test_tril.dir
+/home/geekincode/work_3/build/CMakeFiles/test.dir
+/home/geekincode/work_3/build/CMakeFiles/edit_cache.dir
+/home/geekincode/work_3/build/CMakeFiles/rebuild_cache.dir
